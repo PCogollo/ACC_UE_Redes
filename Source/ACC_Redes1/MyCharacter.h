@@ -26,4 +26,18 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float mass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CharacterC")
+		float runVelocity;
+
+	UFUNCTION(BlueprintCallable, Category = "Test")
+		void Move();
+
+	UFUNCTION(BlueprintCallable, Category = "Test")
+		void DummyFunction();
+
+	void DummyCode();
+
 };

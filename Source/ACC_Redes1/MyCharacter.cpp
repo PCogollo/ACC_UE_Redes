@@ -32,3 +32,18 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 }
 
+void AMyCharacter::Move()
+{
+
+}
+
+void AMyCharacter::DummyFunction()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Saltaste"));
+}
+
+void AMyCharacter::DummyCode()
+{
+
+}
+
